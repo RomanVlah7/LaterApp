@@ -17,6 +17,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserService {
 
+    /*This is UserService, it processes the tha data which comes from
+    UserController (UserController call methods from UserService)*/
+
     @Autowired
     UserRep userDao;
 

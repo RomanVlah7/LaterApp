@@ -9,6 +9,10 @@ import java.util.List;
 
 @Component
 public class UserRep {
+
+    /*this is a user repository class, an implementation of repository interface interact with database */
+
+
     @Autowired
     UserRepository userRepository;
     @Autowired

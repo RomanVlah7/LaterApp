@@ -8,6 +8,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+
+    /*this class is a controller class to process HTTP requests
+    * I use basic scheme2 to process requests Controller -> Service -> Repository class */
+
     @Autowired
     private UserService userService;
 

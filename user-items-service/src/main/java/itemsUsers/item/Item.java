@@ -12,6 +12,7 @@ import itemsUsers.user.UserDto;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Item {
+    /*this class represents an entity from the database*/
 
     @ManyToOne
     @JoinColumn(name = "author_id", referencedColumnName = "userId")
@@ -23,11 +24,4 @@ public class Item {
     private String url;
 
 
-
-/*    @Entity
-    @Table(name = "users")
-    private static class AuthorId{
-        @Column(name = "user_id")
-        long authorId;
-    }*/
 }

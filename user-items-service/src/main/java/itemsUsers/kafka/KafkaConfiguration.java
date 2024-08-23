@@ -6,8 +6,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class KafkaConfiguration {
+
     @Bean
     public NewTopic newTopic(){
-        return new NewTopic("message-topic", 1, (short) 1);
+        return new NewTopic("notification-topic", 1, (short) 1);
     }
 }

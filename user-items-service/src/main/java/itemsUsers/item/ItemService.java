@@ -17,6 +17,9 @@ import java.util.List;
 
 @Service
 public class ItemService {
+
+    /*this is a service for Item Class, it is a layer between Controller and repository class*/
+
     static Class<String> Object;
     EntityManager entityManager;
     @Autowired
@@ -26,17 +29,6 @@ public class ItemService {
 
     public Item saveItem(Item item) {
         Item result = itemRep.saveItem(item);
-        /*RestTemplate restTemplate = new RestTemplate();
-        try {
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI("http://localhost:81/notif/new-item"))
-                    .header("Content-Type", "application/json")
-                    .POST(HttpRequest.BodyPublishers.ofString(String.valueOf(item.authorInfo.getUserId())))
-                    .build();
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }*/
-
         kafkaProducer.sendMessage(item.authorInfo.getUserId().toString());
 
         return result;

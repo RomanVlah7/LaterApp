@@ -12,6 +12,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "users")
 public class User {
 
+    /*this class represents an entity from database*/
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;

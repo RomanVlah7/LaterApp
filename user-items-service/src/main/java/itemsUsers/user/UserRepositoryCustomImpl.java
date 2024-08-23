@@ -8,6 +8,8 @@ import java.util.List;
 
 @Repository
 public class UserRepositoryCustomImpl implements UserRepositoryCustom {
+
+    /*this method is implementation for custom queries to DB from interface 'UserRepositoryCustom' */
     @Autowired
     EntityManager entityManager;
 

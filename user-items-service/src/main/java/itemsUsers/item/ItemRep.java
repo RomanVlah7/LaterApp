@@ -10,6 +10,10 @@ import java.util.List;
 
 @Component
 public class ItemRep {
+
+    /*this is a item repository class, an implementation of repository interface to interact with database */
+
+
     @Autowired
     private EntityManager entityManager;
     @Autowired

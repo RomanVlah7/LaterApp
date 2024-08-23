@@ -14,6 +14,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "users")
+
+/*this is a data transfer class, it is a copy of class User but without confidential data*/
+
 public class UserDto {
     @Id
     private Long userId;

@@ -11,6 +11,12 @@ import java.util.List;
 @RequestMapping("/items")
 public class ItemController {
 
+
+    /*this class is a controller class to process HTTP requests
+     * I use basic scheme to process requests Controller -> Service -> Repository class */
+
+
+
     @Autowired
     private ItemService itemService;
 
@@ -29,26 +35,4 @@ public class ItemController {
         itemService.deleteById(itemId);
     }
 
-
-    /*@GetMapping
-    List<Item> findAll(@RequestHeader("X-Later-UserID") Long userID){
-        log.debug(userID);
-        return itemService.findAll(userID);
-    }
-
-    @PostMapping
-    String addNewItem(
-            @RequestHeader("X-Later-UserID") Long userID,
-            @RequestBody Item item){
-        log.debug(userID);
-        return itemService.addNewItem(item);
-    }
-
-    @DeleteMapping
-    public String deleteItemByID(
-            @RequestHeader("X-Later-UserID") Long userID,
-            @RequestHeader int itemID){
-        log.debug(userID);
-        return itemService.deleteByID(itemID);
-    }*/
 }
