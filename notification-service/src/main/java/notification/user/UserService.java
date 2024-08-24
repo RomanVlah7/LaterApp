@@ -16,7 +16,7 @@ public class UserService {
     public void sendNotification(String to) {
         String subject = "New user";
         String text = "Welcome to 'Later' Application! This service allow you to store bookmarks to you favorite internet resources and share it with the whole world!";
-        log.info("Notification: {}", text);
+        log.info("Notification: " + text);
         //emailService.sendEmail(to, subject, text);
     }
 }

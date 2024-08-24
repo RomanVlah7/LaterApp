@@ -1,5 +1,6 @@
 package itemsUsers.user;
 
+import itemsUsers.kafka.KafkaProducer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
@@ -23,19 +24,12 @@ public class UserService {
     @Autowired
     UserRep userDao;
 
+    @Autowired
+    KafkaProducer kafkaProducer;
+
     public User saveUser(User user) {
         userDao.saveUser(user);
-        try {
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI("http://localhost:81/notif/new-item"))
-                    .header("Content-Type", "application/json")
-                    .POST(HttpRequest.BodyPublishers.ofString(user.getEmail()))
-                    .build();
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
-
-        String email = user.getEmail();
+        kafkaProducer.sendToUserNotificationTopic(user.getEmail());
         return user;
     }
 

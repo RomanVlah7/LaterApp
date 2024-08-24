@@ -9,8 +9,8 @@ public class ItemKafkaConsumer {
     @Autowired
     private ItemService itemService;
 
-    @KafkaListener(topics = "notification-topic", groupId = "user-items-to-notification")
-    public void sendNotification(String userWhoMadePost){
+    @KafkaListener(topics = "item-notificationsssssss-topic",groupId = "user-items-to-notification")
+    public void sendItemNotification(String userWhoMadePost){
         Long userId = Long.parseLong(userWhoMadePost);
         itemService.sendNotification(userId);
     }

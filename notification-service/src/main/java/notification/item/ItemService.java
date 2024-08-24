@@ -14,7 +14,7 @@ public class ItemService {
 
     public void sendNotification(Long userIdWhoMadePost) {
         String subject = "New item";
-        String text = new String("User " + userIdWhoMadePost + "has made a new post");
+        String text = new String("User " + userIdWhoMadePost + "has made a new item");
         log.info("Notification: {}", text);
         //emailService.sendEmail(to, subject, text);
     }
