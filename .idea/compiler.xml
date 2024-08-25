@@ -7,18 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-items-service" />
-        <module name="notification-service" />
+        <module name="items-microservice" />
+        <module name="api-gateway-microservice" />
+        <module name="notification-microservice" />
+        <module name="users-microservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="user-item-service" target="22" />
+      <module name="user-items-microservice" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="notification-service" options="-parameters" />
-      <module name="user-items-service" options="-parameters" />
+      <module name="items-microservice" options="-parameters" />
+      <module name="notification-microservice" options="-parameters" />
+      <module name="user-items-microservice" options="-parameters" />
+      <module name="users-microservice" options="-parameters" />
     </option>
   </component>
 </project>

@@ -9,8 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>user-items-service</module>
-        <module>notification-service</module>
+        <module>notification-microservice</module>
+        <module>api-gateway-microservice</module>
+        <module>users-microservice</module>
+        <module>items-microservice</module>
     </modules>
     <build>
         <plugins>
