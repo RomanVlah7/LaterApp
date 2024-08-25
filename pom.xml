@@ -13,6 +13,7 @@
         <module>api-gateway-microservice</module>
         <module>users-microservice</module>
         <module>items-microservice</module>
+        <module>discovery-microservice</module>
     </modules>
     <build>
         <plugins>

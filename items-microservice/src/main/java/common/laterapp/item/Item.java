@@ -1,10 +1,10 @@
 package common.laterapp.item;
 
+import common.laterapp.user.UserDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import itemsUsers.user.UserDto;
 
 @Entity
 @Table(name = "items")

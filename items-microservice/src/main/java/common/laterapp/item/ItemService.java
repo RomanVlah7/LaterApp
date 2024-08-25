@@ -1,6 +1,7 @@
 package common.laterapp.item;
 
-import itemsUsers.kafka.KafkaProducer;
+
+import common.laterapp.kafka.KafkaProducer;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

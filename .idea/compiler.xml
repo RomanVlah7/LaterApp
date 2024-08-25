@@ -11,15 +11,18 @@
         <module name="api-gateway-microservice" />
         <module name="notification-microservice" />
         <module name="users-microservice" />
+        <module name="discovery-microservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="discovery-service" target="22" />
       <module name="user-item-service" target="22" />
       <module name="user-items-microservice" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="discovery-microservice" options="-parameters" />
       <module name="items-microservice" options="-parameters" />
       <module name="notification-microservice" options="-parameters" />
       <module name="user-items-microservice" options="-parameters" />
