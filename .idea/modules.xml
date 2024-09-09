@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/discovery-service/discovery-microservice.iml" filepath="$PROJECT_DIR$/discovery-service/discovery-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Later_app.iml" filepath="$PROJECT_DIR$/Later_app.iml" />
     </modules>
   </component>
 </project>

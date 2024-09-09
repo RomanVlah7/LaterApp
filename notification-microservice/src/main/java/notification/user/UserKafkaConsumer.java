@@ -14,7 +14,7 @@ public class UserKafkaConsumer {
     UserService userService;
 
     @KafkaListener(topics = "user-notification-topic", groupId = "user-items-to-notification")
-    public void sendUserNotification(String userEmail){
+    public void sendUserNotification(String userEmail) {
         log.info("received kafka message");
         userService.sendNotification(userEmail);
     }
