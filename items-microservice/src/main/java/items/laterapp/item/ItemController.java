@@ -1,13 +1,16 @@
 package items.laterapp.item;
 
+import items.laterapp.tools.LogTools;
 import lombok.extern.apachecommons.CommonsLog;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.zalando.logbook.Logbook;
 
 import java.util.List;
 
-@CommonsLog
+
 @RestController
 @RequestMapping("/items")
 public class ItemController {
@@ -19,6 +22,11 @@ public class ItemController {
 
     @Autowired
     private ItemService itemService;
+    @Autowired
+    private LogTools logTools;
+    private static final Logger log = LoggerFactory.getLogger(ItemController.class);
+
+
 
 
     //--------Get Mapping-------------
@@ -30,11 +38,13 @@ public class ItemController {
 
     @GetMapping("/get-item/{itemId}")
     public List<ItemDto> findItemById(@PathVariable Long itemId){
+        logTools.logMethodInfoDebug(itemId.toString(), log);
         return itemService.findItemById(itemId);
     }
 
     @GetMapping("get-items-of-user/{userId}")
     public List<ItemDto> findAllItemsOfUser(@PathVariable Long userId){
+        logTools.logMethodInfoDebug(userId.toString(), log);
         return itemService.findAllItemsOfUser(userId);
     }
 
@@ -42,6 +52,7 @@ public class ItemController {
 
     @PostMapping("/save-item")
     public Item saveItem(@RequestBody Item item) {
+        logTools.logMethodInfoDebug(item.toString(), log);
         return itemService.saveItem(item);
     }
 
@@ -49,6 +60,7 @@ public class ItemController {
 
     @DeleteMapping("/delete-item")
     public void deleteById(@RequestBody Long itemId) {
+        logTools.logMethodInfoDebug(itemId.toString(),log);
         itemService.deleteById(itemId);
     }
 
