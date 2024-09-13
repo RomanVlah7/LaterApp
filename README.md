@@ -5,5 +5,5 @@ This is my pet-project an app called "Later" (an Pastebin app). In this app user
 curent stage it consits of two microservicies "User-items-service"(for CRUD operations) and "Notification-service"(to
 send notifications via email using Google smtp)
 
+![Flowchart](https://github.com/user-attachments/assets/f0626e0d-2943-42bc-9182-0ad97a31c85e)
 
---block scheme here
