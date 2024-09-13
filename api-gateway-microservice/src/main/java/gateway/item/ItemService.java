@@ -15,16 +15,12 @@ public class ItemService {
     RestTemplate restTemplate = new RestTemplate();
 
     /*this is a service for Item Class, it is a layer between Controller and repository class*/
-    public ResponseEntity<String> saveItem(ItemDto item){
-        restTemplate.postForObject("http://loclahost:82/items/save-item", item, HttpResponse.class);
-        return new ResponseEntity<String>(
-                "Item added successful",
-                HttpStatus.OK
-        );
+    public Item saveItem(Item item){
+        return restTemplate.postForObject("http://localhost:82/items/save-item", item, Item.class);
     }
 
-    public ItemDto getItemById(Long itemId){
-        return restTemplate.getForEntity("http://localhost:82/items/get-item/" + itemId.toString(), ItemDto.class).getBody();
+    public List<ItemDto> getItemById(Long itemId){
+        return restTemplate.getForEntity("http://localhost:82/items/get-item/" + itemId.toString(), List.class).getBody();
     }
 
     public List<ItemDto> getAllItemsOfUser(Long userId){

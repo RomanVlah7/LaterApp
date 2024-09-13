@@ -31,7 +31,7 @@ public class ItemService {
         return itemRep.findAllItemsOfUser(userId);
     }
 
-    public ItemDto findItemById(Long itemId){
+    public List<ItemDto> findItemById(Long itemId){
         return itemRep.findItemById(itemId);
     }
 

@@ -4,9 +4,10 @@ package gateway.user;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.zalando.logbook.Logbook;
 
 import java.util.Map;
-
+@RestController
 @RequestMapping("/later-app-api")
 public class UserController {
     @Autowired
@@ -22,14 +23,14 @@ public class UserController {
     //---------------Post Mapping---------------------
 
     @PostMapping("/new-user")
-    public ResponseEntity<Map<String, String>> newUser(@RequestBody User user) {
-        return userService.tryToSaveUser(user);
+    public User newUser(@RequestBody User user) {
+        return userService.saveUser(user);
     }
 
     //--------------Delete Mapping-----------------
 
     @DeleteMapping("/delete-user-by-id")
-    public ResponseEntity<Map<String, String>> deleteUser (Long userId){
+    public ResponseEntity<Map<String, String>> deleteUser (@RequestParam Long userId){
         return userService.deleteUserById(userId);
     }
 }

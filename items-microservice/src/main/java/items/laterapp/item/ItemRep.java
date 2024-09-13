@@ -37,8 +37,8 @@ public class ItemRep {
     }
 
     @Transactional
-    public ItemDto findItemById(Long itemId){
-        return (ItemDto) itemRepository.findByItemId(itemId);
+    public List<ItemDto> findItemById(Long itemId){
+        return itemRepository.findByItemId(itemId);
     }
 
     @Transactional

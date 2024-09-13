@@ -3,6 +3,7 @@ package users.user;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.zalando.logbook.Logbook;
 
 import java.util.List;
 import java.util.Map;

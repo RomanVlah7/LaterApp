@@ -3,6 +3,7 @@ package items.laterapp.item;
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.zalando.logbook.Logbook;
 
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class ItemController {
     }
 
     @GetMapping("/get-item/{itemId}")
-    public ItemDto findItemById(@PathVariable Long itemId){
+    public List<ItemDto> findItemById(@PathVariable Long itemId){
         return itemService.findItemById(itemId);
     }
 

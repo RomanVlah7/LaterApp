@@ -4,6 +4,7 @@ import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.zalando.logbook.Logbook;
 
 import java.util.List;
 
@@ -19,6 +20,7 @@ public class ItemController {
     private ItemService itemService;
 
 
+
     //--------Get Mapping-------------
 
     @GetMapping("/find-all-items")
@@ -27,11 +29,11 @@ public class ItemController {
     }
 
     @GetMapping("/get-item")
-    public ItemDto findItemById(@RequestParam Long itemId){
+    public List<ItemDto> findItemById(@RequestParam Long itemId){
         return itemService.getItemById(itemId);
     }
 
-    @GetMapping("get-items-of-user")
+    @GetMapping("/get-items-of-user")
     public List<ItemDto> findAllItemsOfUser(@RequestParam Long userId){
         return itemService.getAllItemsOfUser(userId);
     }
@@ -39,7 +41,7 @@ public class ItemController {
     //--------Post Mapping------------
 
     @PostMapping("/save-item")
-    public ResponseEntity<String> saveItem(@RequestBody ItemDto item) {
+    public Item saveItem(@RequestBody Item item) {
         return itemService.saveItem(item);
     }
 

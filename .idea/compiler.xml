@@ -16,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discovery-service" target="22" />
+      <module name="LaterApp_Local" target="21" />
       <module name="user-item-service" target="22" />
       <module name="user-items-microservice" target="21" />
     </bytecodeTargetLevel>

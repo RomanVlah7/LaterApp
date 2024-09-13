@@ -31,8 +31,9 @@ public class UserService {
          return result;
     }
 
-    public ResponseEntity<Map<String, String>> tryToSaveUser(User user) {
+/*    public ResponseEntity<Map<String, String>> tryToSaveUser(User user) {
         User result = getUserById(user.getUserId());
+        //todo add here a validation using login and password or just save users without validation
 
         if(result!= null){
             return ExceptionHandlers.userAlreadyExistsException(new UserAlreadyExistsException());
@@ -43,7 +44,7 @@ public class UserService {
                     HttpStatus.OK
             );
         }
-    }
+    }*/
 
     public User saveUser(User user){
         return restTemplate.postForObject("http://localhost:84/users/save-user", user, User.class);
