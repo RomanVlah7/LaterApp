@@ -49,7 +49,7 @@ Now you can send a request to Later App using Postman(you can use prepared postm
 
 # BG
 
-Добре дошли в" след", пет-проект с микросервизи, Kafka, PostgreSQL.
+Добре дошли в" Later", пет-проект с микросервизи, Kafka, PostgreSQL.
 
 Това е моят пет-проект, приложение, наречено "Later". В това приложение потребителите могат да съхраняват URL или прост текст. На
 настоящият етап се състои от пет микросервиси :
