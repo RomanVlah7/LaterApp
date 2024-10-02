@@ -49,11 +49,11 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 
 # 3)Start application
 ## Please run the microservices in this sequence:
-### Discovery microsrvice
-### Api-Gateway Microsevice
-### Items Microservice
-### Users Microservice
-### Notification Microservice
+Discovery microsrvice
+Api-Gateway Microsevice
+Items Microservice
+Users Microservice
+Notification Microservice
 
 ### 4)Send a request
 Now you can send a request to Later App using Postman(you can use prepared postman requests from file 'Later APP Tests.postman_collection.json' in the main directory)
