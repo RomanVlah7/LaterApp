@@ -1,6 +1,6 @@
 # Welcome to "Later" EN/BG
 # EN
-Wlcome to "Later", a pet-project with microservicies, Kafka, PostgeSQL.
+Wlcome to "Later", a pet-project with microservicies, Kafka, PostgeSQL, Eureka.
 
 This is my pet-project, an app called "Later" (an Pastebin app). In this app users can store a url or simple text. At
 curent stage it consits of five microservicies: 
@@ -43,13 +43,22 @@ user_id BIGINT,
 FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 ```
-### 3)Send a request
+
+### 3)Start application
+## Please run the microservices in this sequence:
+# Discovery microsrvice
+# Api-Gateway Microsevice
+# Items Microservice
+# Users Microservice
+# Notification Microservice
+
+### 4)Send a request
 Now you can send a request to Later App using Postman(you can use prepared postman requests from file 'Later APP Tests.postman_collection.json' in the main directory)
 
 
 # BG
 
-Добре дошли в" Later", пет-проект с микросервизи, Kafka, PostgreSQL.
+Добре дошли в" Later", пет-проект с микросервизи, Kafka, PostgreSQL, Eureka.
 
 Това е моят пет-проект, приложение, наречено "Later". В това приложение потребителите могат да съхраняват URL или прост текст. На
 настоящият етап се състои от пет микросервиси :
@@ -70,7 +79,7 @@ Now you can send a request to Later App using Postman(you can use prepared postm
 
 ### 1) Клонирайте репозиторий на вашето устройство
 
-### 2) Исползвайте ьаза от дани(PostgreSQL / Н2)
+### 2) Исползвайте база от дани(PostgreSQL / Н2)
 Можете да намерите всички необходими скриптове по-долу
 
 ```
@@ -93,7 +102,15 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 ```
 
-### 3 изпратете запитване
+### 3) Стартиране на приложението
+## Моля, пуснете микросервизите в тази последователност:
+# Discovery microsrvice
+# Api-Gateway Microsevice
+# Items Microservice
+# Users Microservice
+# Notification Microservice
+
+### 4) изпратете запитване
 Сега можете да изпратите заявка до приложение с помощта на Postman(можете да използвате подготвени Postman заявки от файл 'Later APP Tests.postman_collection.json' в главната директория)
 
 
