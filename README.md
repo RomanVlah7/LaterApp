@@ -1,4 +1,6 @@
-# Welcome to "Later" EN/BG
+# Welcome to "Later"
+Добре дошли в" Later", пет-проект с микросервизи, Kafka, PostgreSQL, Eureka.
+
 # EN
 Wlcome to "Later", a pet-project with microservicies, Kafka, PostgeSQL, Eureka.
 
@@ -44,13 +46,13 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 ```
 
-### 3)Start application
+# 3)Start application
 ## Please run the microservices in this sequence:
-# Discovery microsrvice
-# Api-Gateway Microsevice
-# Items Microservice
-# Users Microservice
-# Notification Microservice
+### Discovery microsrvice
+### Api-Gateway Microsevice
+### Items Microservice
+### Users Microservice
+### Notification Microservice
 
 ### 4)Send a request
 Now you can send a request to Later App using Postman(you can use prepared postman requests from file 'Later APP Tests.postman_collection.json' in the main directory)
@@ -102,13 +104,13 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 ```
 
-### 3) Стартиране на приложението
+# 3) Стартиране на приложението
 ## Моля, пуснете микросервизите в тази последователност:
-# Discovery microsrvice
-# Api-Gateway Microsevice
-# Items Microservice
-# Users Microservice
-# Notification Microservice
+### Discovery microsrvice
+### Api-Gateway Microsevice
+### Items Microservice
+### Users Microservice
+### Notification Microservice
 
 ### 4) изпратете запитване
 Сега можете да изпратите заявка до приложение с помощта на Postman(можете да използвате подготвени Postman заявки от файл 'Later APP Tests.postman_collection.json' в главната директория)
