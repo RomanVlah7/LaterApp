@@ -48,7 +48,7 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 ```
 
 ### 3)Start application
-## Please run the microservices in this sequence:
+Please run the microservices in this sequence:
 Discovery microsrvice
 Api-Gateway Microsevice
 Items Microservice
@@ -106,7 +106,7 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 ```
 
 ### 3) Стартиране на приложението
-## Моля, пуснете микросервизите в тази последователност:
+Моля, пуснете микросервизите в тази последователност:
 Discovery microsrvice
 Api-Gateway Microsevice
 Items Microservice
