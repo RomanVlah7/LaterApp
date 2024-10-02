@@ -107,11 +107,11 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 
 # 3) Стартиране на приложението
 ## Моля, пуснете микросервизите в тази последователност:
-### Discovery microsrvice
-### Api-Gateway Microsevice
-### Items Microservice
-### Users Microservice
-### Notification Microservice
+Discovery microsrvice
+Api-Gateway Microsevice
+Items Microservice
+Users Microservice
+Notification Microservice
 
 ### 4) изпратете запитване
 Сега можете да изпратите заявка до приложение с помощта на Postman(можете да използвате подготвени Postman заявки от файл 'Later APP Tests.postman_collection.json' в главната директория)
