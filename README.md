@@ -1,6 +1,4 @@
 # Welcome to "Later"
-Добре дошли в" Later", пет-проект с микросервизи, Kafka, PostgreSQL, Eureka.
-По-долу можете да намерите README на Български език.
 
 # EN
 Wlcome to "Later", a pet-project with microservicies, Kafka, PostgeSQL, Eureka.
