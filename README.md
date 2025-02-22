@@ -47,10 +47,10 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 
 ### 3)Start application
 Please run the microservices in this sequence:
-Discovery microsrvice
-Api-Gateway Microsevice
-Items Microservice
-Users Microservice
+Discovery microsrvice, 
+Api-Gateway Microsevice, 
+Items Microservice, 
+Users Microservice, 
 Notification Microservice
 
 ### 4)Send a request
