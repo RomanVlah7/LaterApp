@@ -1,6 +1,4 @@
 # Welcome to "Later"
-Добре дошли в" Later", пет-проект с микросервизи, Kafka, PostgreSQL, Eureka.
-По-долу можете да намерите README на Български език.
 
 # EN
 Wlcome to "Later", a pet-project with microservicies, Kafka, PostgeSQL, Eureka.
@@ -49,10 +47,10 @@ FOREIGN KEY (user_id) REFERENCES users(user_id)
 
 ### 3)Start application
 Please run the microservices in this sequence:
-Discovery microsrvice
-Api-Gateway Microsevice
-Items Microservice
-Users Microservice
+Discovery microsrvice, 
+Api-Gateway Microsevice, 
+Items Microservice, 
+Users Microservice, 
 Notification Microservice
 
 ### 4)Send a request
